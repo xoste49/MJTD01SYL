@@ -227,6 +227,3 @@ Done! Flashing is complete!
 ```
 {"NAME":"Mi LED Desk Lamp 1S","GPIO":[6212,0,416,0,417,0,0,0,3840,0,0,0,160,640,608,0,0,0,0,0,0,0,3264,3296,0,0,0,0,0,32,0,0,0,0,0,0],"FLAG":0,"BASE":1,"CMND":"DimmerRange 30,100"}
 ```
-
-## Using
-https://github.com/espressif/esptool
