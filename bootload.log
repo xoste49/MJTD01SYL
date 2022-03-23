@@ -1,0 +1,100 @@
+_|      _|  _|_|_|  _|_|_|    _|_|
+_|_|  _|_|    _|      _|    _|    _|
+_|  _|  _|    _|      _|    _|    _|
+_|      _|    _|      _|    _|    _|
+_|      _|  _|_|_|  _|_|_|    _|_|
+JENKINS BUILD NUMBER: N/A
+BUILD TIME: Sep  2 2021,06:17:10
+BUILT BY: N/A
+MIIO APP VER: 2.1.7_0017
+MIIO MCU VER:
+MIIO DID: 394523575
+MIIO WIFI MAC: 5448e6de4a9a
+MIIO MODEL: yeelink.light.lamp4
+ARCH TYPE: esp32,0x0000a601
+ARCH VER: fb7e59c
+FLASH INFO: manufacturer(0x20), memory type(0x40), capacity(0x16)
+I (1010) wifi:wifi driver task: 3ffde5d4, prio:23, stack:6656, core=0
+I (1010) wifi:wifi firmware version: 76686f3
+I (1010) wifi:config NVS flash: enabled
+I (1010) wifi:config nano formating: disabled
+I (1010) wifi:Init data frame dynamic rx buffer num: 32
+I (1020) wifi:Init management frame dynamic rx buffer num: 32
+I (1030) wifi:Init management short buffer num: 32
+I (1030) wifi:Init dynamic tx buffer num: 32
+I (1030) wifi:Init static rx buffer size: 1600
+I (1040) wifi:Init static rx buffer num: 10
+I (1040) wifi:Init dynamic rx buffer num: 32
+I (1070) wifi:set country: cc=RU schan=1 nchan=13 policy=1
+
+I (1070) wifi:Set ps type: 1
+
+I (1160) wifi:mode : sta (54:48:e6:de:4a:9a)
+I (1170) wifi:Set ps type: 0
+
+Keystore initialised
+Accessory is not Paired with any controller
+Database initialised. Accessory Device ID: 7D:6C:41:F5:C2:38
+HAP Initialization succeeded. Version : 4.0-fb7e59c
+W (1180) YGLC_HAP: has token HAP_MFI_AUTH_SW
+Enabling SW Token Authentication
+Setup ID: 9XCR
+Getting setup info from factory NVS
+HAP Main Loop Started
+mDNS initialised
+Registering HomeKit web handlers
+Announcing _hap._tcp mDNS service
+Setup ID: 9XCR
+I (4340) wifi:new:<5,2>, old:<1,0>, ap:<255,255>, sta:<5,2>, prof:1
+I (5210) wifi:state: init -> auth (b0)
+I (5220) wifi:state: auth -> assoc (0)
+I (5230) wifi:state: assoc -> run (10)
+I (5240) wifi:connected with kv410, aid = 2, channel 5, 40D, bssid = 08:55:31:22:f5:7d
+I (5240) wifi:security: WPA2-PSK, phy: bgn, rssi: -61
+I (5240) wifi:pm start, type: 0
+
+Stopping SoftAP.
+I (5360) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+
+************************
+Wifi ip=192.168.88.23,mask=255.255.255.0,gw=192.168.88.1
+************************
+
+Value Changed
+Value Changed
+03:00:05.420 [W] ots: httpdns resolve start failed, -12 (ots_cloud_host_update,1022)
+03:00:05.430 [I] otu: Opened.
+Re-announcing _hap._tcp mDNS service
+03:00:05.490 [I] ots: ru.ots.io.mi.com resolved to 107.155.51.105.
+03:00:05.490 [I] ots: ots connect 107.155.51.105::443...
+03:00:05.510 [I] tls: connect to server Mijia Cloud, domain is 107.155.51.105, port is 443.
+03:00:05.690 [W] tls: timeout[100]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,389)
+03:00:05.850 [W] tls: timeout[200]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,389)
+03:00:05.960 [W] tls: timeout[300]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,389)
+03:00:06.040 [I] ots: Connected.
+03:00:06.040 [I] ots: -->sync sent.
+03:00:06.060 [I] ots: <--sync ack.
+18:45:57.040 [I] ots: -->login sent.
+18:45:57.100 [I] ots: <--login ack, code=0.
+18:45:57.100 [I] miio_ot: info(ots) will start in 0 ms...
+18:45:57.140 [I] miio_ot: -->info(ots).
+18:45:57.230 [I] miio_ot: <--info ack(ots).
+18:45:58.100 [I] miio_ot: -->pull ip list sent.
+18:46:00.040 [I] ots: -->sync sent.
+18:46:00.060 [I] ots: <--sync ack.
+18:46:08.040 [I] ots: -->sync sent.
+18:46:08.050 [I] ots: <--sync ack.
+18:46:14.310 [I] ots: -->kplv sent.
+18:46:14.340 [I] ots: <--kplv ack.
+18:46:24.040 [I] ots: -->sync sent.
+18:46:24.090 [I] ots: <--sync ack.
+18:46:30.340 [I] ots: -->kplv sent.
+18:46:30.370 [I] ots: <--kplv ack.
+18:46:46.370 [I] ots: -->kplv sent.
+18:46:46.390 [I] ots: <--kplv ack.
+18:46:56.040 [I] ots: -->sync sent.
+18:46:56.060 [I] ots: <--sync ack.
+18:47:02.390 [I] ots: -->kplv sent.
+18:47:02.750 [I] ots: <--kplv ack.
+18:47:18.750 [I] ots: -->kplv sent.
+18:47:18.760 [I] ots: <--kplv ack.
