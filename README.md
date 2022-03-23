@@ -9,9 +9,10 @@ ESP-WROOM-32D
 ![q0yuSrk](https://user-images.githubusercontent.com/7299412/159749577-7cc6ba02-05ac-4623-851c-42d4d3be00c2.jpeg)
 
 ## Original firmware
-Boot лог оригинальной прошивки [bootload.log](bootload.log).
+Boot лог оригинальной прошивки [bootload.log](bootload.log).  
+![2022-03-23_184958](https://user-images.githubusercontent.com/7299412/159749946-35d36d61-9a2b-47aa-9694-63d8f3dbe30d.png)  
+Настройки подключения  
 ![2022-03-23_184921](https://user-images.githubusercontent.com/7299412/159749940-7e65e552-5700-482f-a036-7aded1ebdb23.png)
-![2022-03-23_184958](https://user-images.githubusercontent.com/7299412/159749946-35d36d61-9a2b-47aa-9694-63d8f3dbe30d.png)
 
 
 Using
