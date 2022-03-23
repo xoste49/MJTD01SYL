@@ -227,3 +227,5 @@ Done! Flashing is complete!
 ```
 {"NAME":"Mi LED Desk Lamp 1S","GPIO":[6212,0,416,0,417,0,0,0,3840,0,0,0,160,640,608,0,0,0,0,0,0,0,3264,3296,0,0,0,0,0,32,0,0,0,0,0,0],"FLAG":0,"BASE":1,"CMND":"DimmerRange 30,100"}
 ```
+Profit!  
+![2022-03-23_225944](https://user-images.githubusercontent.com/7299412/159785571-fff39e1c-9396-410b-9476-cf7ef66c019f.png)  
