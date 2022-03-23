@@ -220,8 +220,11 @@ Done! Flashing is complete!
 [22:16:07]00:00:00.983 WIF: WifiManager active for 3 minutes
 [22:16:08]00:00:01.228 HTP: Web server active on tasmota-DE4A9A-2714 with IP address 192.168.4.1
 ```
- Подключаемся к wifi точке котрую создала лампа tasmota-DE4A9A-2714 и открываем 192.168.4.1  
-
+Подключаемся к wifi точке котрую создала лампа tasmota-DE4A9A-2714 и открываем 192.168.4.1  
+Настраем подключение к домашней сети wifi  
+Заходим на новый адрес который сообщит tasmota  
+Переходим `Configuration -> Configure Other -> Template` добавляем конфиг  
+`{"NAME":"Mi LED Desk Lamp 1S","GPIO":[6212,0,416,0,417,0,0,0,3840,0,0,0,160,640,608,0,0,0,0,0,0,0,3264,3296,0,0,0,0,0,32,0,0,0,0,0,0],"FLAG":0,"BASE":1,"CMND":"DimmerRange 30,100"}`
 
 ## Using
 https://github.com/espressif/esptool
