@@ -15,5 +15,38 @@ Boot лог оригинальной прошивки [bootload.log](bootload.lo
 ![2022-03-23_184921](https://user-images.githubusercontent.com/7299412/159749940-7e65e552-5700-482f-a036-7aded1ebdb23.png)
 
 
-Using
+## Схема подключения для режима Download
+ESP Pin     Serial Pin
+GND         GND
+3.3V        GND
+TXD         RXD
+RXD         TXD
+EN          RTS
+GPIO0       GND
+
+## Режим Download
+
+```sh
+# dump firmware 
+$ esptool.exe -b 115200 --port COM3 --before default_reset read_flash 0x00000 0x400000 flash_dump_4M.bin
+Serial port COM3
+Connecting....
+Detecting chip type... Unsupported detection protocol, switching and trying again...
+Connecting...
+Detecting chip type... ESP32
+Chip is unknown ESP32 (revision 1)
+Features: WiFi, BT, Single Core, 240MHz, VRef calibration in efuse, Coding Scheme 3/4
+Crystal is 40MHz
+MAC: 54:48:e6:de:4a:9a
+Uploading stub...
+Running stub...
+Stub running...
+4194304 (100 %)
+4194304 (100 %)
+Read 4194304 bytes at 0x0 in 375.7 seconds (89.3 kbit/s)...
+Hard resetting via RTS pin...
+```
+
+
+## Using
 https://github.com/espressif/esptool
