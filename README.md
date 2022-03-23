@@ -2,7 +2,8 @@
 Reverse engineering
 
 ## Hardware
-ESP-WROOM-32D
+Board ESP-WROOM-32D (chip ESP32-D0WD)  
+Подробнее https://docs.espressif.com/projects/esp-idf/en/v4.3/esp32/hw-reference/modules-and-boards.html  
 ![UW7g0Cw](https://user-images.githubusercontent.com/7299412/159749461-8de5ecc4-f47c-4fe9-b2a0-d89b2eecec2c.jpeg)
 ![IMG_20220323_172951](https://user-images.githubusercontent.com/7299412/159749481-2a7beabb-daa3-4161-8e19-b79daed45d7b.jpg)
 ![IMG_20220323_173131](https://user-images.githubusercontent.com/7299412/159749515-72e5212f-d7d3-42cf-9000-adb90c4e3f26.jpg)
@@ -45,8 +46,47 @@ Stub running...
 4194304 (100 %)
 Read 4194304 bytes at 0x0 in 375.7 seconds (89.3 kbit/s)...
 Hard resetting via RTS pin...
+
+# recovery firmware
+$ esptool.py -b 115200 --port COM3 --before default_reset write_flash 0x00000 flash_dump_4M.bin
+
+# Читаем mac адрес
+$ esptool.py -b 115200 --port COM3 read_mac
+Serial port COM3
+Connecting...
+Detecting chip type... Unsupported detection protocol, switching and trying again...
+Connecting...
+Detecting chip type... ESP32
+Chip is unknown ESP32 (revision 1)
+Features: WiFi, BT, Single Core, 240MHz, VRef calibration in efuse, Coding Scheme 3/4
+Crystal is 40MHz
+MAC: 54:48:e6:de:4a:9a
+Stub is already running. No upload is necessary.
+MAC: 54:48:e6:de:4a:9a
+Hard resetting via RTS pin...
+
+# Читаем chip id
+$ esptool.py -b 115200 --port COM3 chip_id
+Serial port COM3
+Connecting...
+Detecting chip type... Unsupported detection protocol, switching and trying again...
+Connecting...
+Detecting chip type... ESP32
+Chip is unknown ESP32 (revision 1)
+Features: WiFi, BT, Single Core, 240MHz, VRef calibration in efuse, Coding Scheme 3/4
+Crystal is 40MHz
+MAC: 54:48:e6:de:4a:9a
+Stub is already running. No upload is necessary.
+Warning: ESP32 has no Chip ID. Reading MAC instead.
+MAC: 54:48:e6:de:4a:9a
+Hard resetting via RTS pin...
 ```
 
+## Прошивка Tasmota
+```sh
+$ esptool.py --chip esp32 --port COM3 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dout --flash_size detect 0x0 tasmota32.factory.bin
+
+```
 
 ## Using
 https://github.com/espressif/esptool
