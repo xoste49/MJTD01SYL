@@ -10,7 +10,7 @@ Board ESP-WROOM-32D (chip ESP32-D0WD)
 ![q0yuSrk](https://user-images.githubusercontent.com/7299412/159749577-7cc6ba02-05ac-4623-851c-42d4d3be00c2.jpeg)
 
 ## Original firmware
-Boot лог оригинальной прошивки [bootload.log](bootload.log).  
+Boot log of the original firmware [bootload.log](bootload.log).  
 ```log
 _|      _|  _|_|_|  _|_|_|    _|_|
 _|_|  _|_|    _|      _|    _|    _|
@@ -118,13 +118,14 @@ Re-announcing _hap._tcp mDNS service
 
 
 ## Схема подключения для режима Download
-ESP Pin     Serial Pin
-GND         GND
-3.3V        GND
-TXD         RXD
-RXD         TXD
-EN          RTS
-GPIO0       GND
+| ESP Pin    | Serial Pin |
+| ---------- | ---------- |
+| GND        | GND        |
+| 3.3V       | GND        |
+| TXD        | RXD        |
+| RXD        | TXD        |
+| EN         | RTS        |
+| GPIO0      | GND        |
 
 ## Режим Download
 
