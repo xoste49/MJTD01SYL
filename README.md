@@ -1,5 +1,5 @@
 # Mi LED Desk Lamp 1S (MJTD01SYL)
-Reverse engineering
+Reverse engineering and firmware Tasmota
 
 ## Hardware
 Board ESP-WROOM-32D (chip ESP32-D0WD)  
