@@ -225,12 +225,9 @@ Done! Flashing is complete!
 Заходим на новый адрес который сообщит tasmota.  
 Переходим `Configuration -> Configure Other -> Template` добавляем конфиг:  
 ```
+{"NAME":"Mi LED Desk Lamp 1S","GPIO":[6212,0,416,0,417,0,0,0,3840,0,0,0,160,640,608,0,0,0,0,0,0,0,3264,3296,0,0,0,0,0,32,0,0,0,0,0,0],"FLAG":3,"BASE":66}
 {"NAME":"Mi LED Desk Lamp 1S","GPIO":[6212,0,416,0,417,0,0,0,3840,0,0,0,160,640,608,0,0,0,0,0,0,0,3264,3296,0,0,0,0,0,32,0,0,0,0,0,0],"FLAG":0,"BASE":1,"CMND":"DimmerRange 30,100"}
 ```
-Все консольные команды можно посмотреть здесь https://tasmota.github.io/docs/Commands/#light
-DimmerRange 30,100
-Fade 1 включает затухание
-PowerOnFade 1 включает затухание при старте
-Speed 2 Скорость затухание
+Консольные команды можно посмотреть здесь https://tasmota.github.io/docs/Commands/#light
 ## Profit!  
 ![2022-03-23_225944](https://user-images.githubusercontent.com/7299412/159785571-fff39e1c-9396-410b-9476-cf7ef66c019f.png)  
