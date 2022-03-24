@@ -5,9 +5,10 @@ Reverse engineering and firmware Tasmota
 Board ESP-WROOM-32D (chip ESP32-D0WD)  
 More details https://docs.espressif.com/projects/esp-idf/en/v4.3/esp32/hw-reference/modules-and-boards.html  
 ![UW7g0Cw](https://user-images.githubusercontent.com/7299412/159749461-8de5ecc4-f47c-4fe9-b2a0-d89b2eecec2c.jpeg)
+![q0yuSrk](https://user-images.githubusercontent.com/7299412/159749577-7cc6ba02-05ac-4623-851c-42d4d3be00c2.jpeg)
 ![IMG_20220323_172951](https://user-images.githubusercontent.com/7299412/159749481-2a7beabb-daa3-4161-8e19-b79daed45d7b.jpg)
 ![IMG_20220323_173131](https://user-images.githubusercontent.com/7299412/159749515-72e5212f-d7d3-42cf-9000-adb90c4e3f26.jpg)
-![q0yuSrk](https://user-images.githubusercontent.com/7299412/159749577-7cc6ba02-05ac-4623-851c-42d4d3be00c2.jpeg)
+
 
 ## Original firmware
 Boot log of the original firmware [bootload.log](bootload.log).  
@@ -127,8 +128,8 @@ Connection settings
 | EN         | RTS        |
 | GPIO0      | GND        |
 
-![pinout1_1](https://user-images.githubusercontent.com/7299412/159950879-c5435045-c0ff-4fa1-ae60-8fb5d9c6e93d.png)
 ![pinout2_1](https://user-images.githubusercontent.com/7299412/159950912-0b7d1fd8-7fe1-4ff4-a7b0-4aba74d8b004.png)
+![pinout1_1](https://user-images.githubusercontent.com/7299412/159950879-c5435045-c0ff-4fa1-ae60-8fb5d9c6e93d.png)
 
 ## Firmware
 
