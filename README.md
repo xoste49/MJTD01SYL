@@ -160,7 +160,7 @@ $ esptool.py -b 115200 --port COM3 --before default_reset write_flash 0x00000 fl
 ## Прошивка Tasmota
 Flash only with [tasmota32solo1.bin](http://ota.tasmota.com/tasmota32/release/tasmota32solo1.bin  ) build for ESP32-SOLO-1. [Flashing instructions](https://tasmota.github.io/docs/ESP32/#flashing) for tasmota32 firmware.  
 I used [ESP flasher](https://github.com/Jason2866/ESP_Flasher/releases)  
-Log    
+Log
 ```log
 Using 'COM3' as serial port.
 Connecting......
@@ -225,13 +225,13 @@ Done! Flashing is complete!
 [22:16:07]00:00:00.983 WIF: WifiManager active for 3 minutes
 [22:16:08]00:00:01.228 HTP: Web server active on tasmota-DE4A9A-2714 with IP address 192.168.4.1
 ```
-Подключаемся к wifi точке котрую создала лампа tasmota-DE4A9A-2714 и открываем 192.168.4.1  
-Настраем подключение к домашней сети wifi.  
-Заходим на новый адрес который сообщит tasmota.  
-Импортируем template (https://tasmota.github.io/docs/Templates/#importing-templates) 
+Connect to the wifi point of the tasmota-DE4A9A-2714 lamp and open 192.168.4.1 
+Set up a wifi connection. 
+Пo to the new address that tasmota will report.  
+[Import template](https://tasmota.github.io/docs/Templates/#importing-templates) 
 ```
 {"NAME":"Mi LED Desk Lamp 1S","GPIO":[6212,0,416,0,417,0,0,0,3840,0,0,0,160,640,608,0,0,0,0,0,0,0,3264,3296,0,0,0,0,0,32,0,0,0,0,0,0],"FLAG":3,"BASE":66,"CMND":"DimmerRange 30,100|Fade 1|PowerOnFade 1|Speed 2"}
 ```
-Консольные команды можно посмотреть здесь https://tasmota.github.io/docs/Commands/#light
+[Console commands](https://tasmota.github.io/docs/Commands/#light)
 ## Profit!  
 ![2022-03-23_225944](https://user-images.githubusercontent.com/7299412/159785571-fff39e1c-9396-410b-9476-cf7ef66c019f.png)  
