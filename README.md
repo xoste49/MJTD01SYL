@@ -127,6 +127,9 @@ Connection settings
 | EN         | RTS        |
 | GPIO0      | GND        |
 
+![pinout1_1](https://user-images.githubusercontent.com/7299412/159950879-c5435045-c0ff-4fa1-ae60-8fb5d9c6e93d.png)
+![pinout2_1](https://user-images.githubusercontent.com/7299412/159950912-0b7d1fd8-7fe1-4ff4-a7b0-4aba74d8b004.png)
+
 ## Firmware
 
 ```sh
