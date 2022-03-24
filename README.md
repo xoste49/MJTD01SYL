@@ -11,7 +11,108 @@ Board ESP-WROOM-32D (chip ESP32-D0WD)
 
 ## Original firmware
 Boot лог оригинальной прошивки [bootload.log](bootload.log).  
-![2022-03-23_184958](https://user-images.githubusercontent.com/7299412/159749946-35d36d61-9a2b-47aa-9694-63d8f3dbe30d.png)  
+```log
+_|      _|  _|_|_|  _|_|_|    _|_|
+_|_|  _|_|    _|      _|    _|    _|
+_|  _|  _|    _|      _|    _|    _|
+_|      _|    _|      _|    _|    _|
+_|      _|  _|_|_|  _|_|_|    _|_|
+JENKINS BUILD NUMBER: N/A
+BUILD TIME: Sep  2 2021,06:17:10
+BUILT BY: N/A
+MIIO APP VER: 2.1.7_0017
+MIIO MCU VER:
+MIIO DID: 394523575
+MIIO WIFI MAC: 5448e6de4a9a
+MIIO MODEL: yeelink.light.lamp4
+ARCH TYPE: esp32,0x0000a601
+ARCH VER: fb7e59c
+FLASH INFO: manufacturer(0x20), memory type(0x40), capacity(0x16)
+I (1010) wifi:wifi driver task: 3ffde5d4, prio:23, stack:6656, core=0
+I (1010) wifi:wifi firmware version: 76686f3
+I (1010) wifi:config NVS flash: enabled
+I (1010) wifi:config nano formating: disabled
+I (1010) wifi:Init data frame dynamic rx buffer num: 32
+I (1020) wifi:Init management frame dynamic rx buffer num: 32
+I (1030) wifi:Init management short buffer num: 32
+I (1030) wifi:Init dynamic tx buffer num: 32
+I (1030) wifi:Init static rx buffer size: 1600
+I (1040) wifi:Init static rx buffer num: 10
+I (1040) wifi:Init dynamic rx buffer num: 32
+I (1070) wifi:set country: cc=RU schan=1 nchan=13 policy=1
+
+I (1070) wifi:Set ps type: 1
+
+I (1160) wifi:mode : sta (54:48:e6:de:4a:9a)
+I (1170) wifi:Set ps type: 0
+
+Keystore initialised
+Accessory is not Paired with any controller
+Database initialised. Accessory Device ID: 7D:6C:41:F5:C2:38
+HAP Initialization succeeded. Version : 4.0-fb7e59c
+W (1180) YGLC_HAP: has token HAP_MFI_AUTH_SW
+Enabling SW Token Authentication
+Setup ID: 9XCR
+Getting setup info from factory NVS
+HAP Main Loop Started
+mDNS initialised
+Registering HomeKit web handlers
+Announcing _hap._tcp mDNS service
+Setup ID: 9XCR
+I (4340) wifi:new:<5,2>, old:<1,0>, ap:<255,255>, sta:<5,2>, prof:1
+I (5210) wifi:state: init -> auth (b0)
+I (5220) wifi:state: auth -> assoc (0)
+I (5230) wifi:state: assoc -> run (10)
+I (5240) wifi:connected with kv410, aid = 2, channel 5, 40D, bssid = 08:55:31:22:f5:7d
+I (5240) wifi:security: WPA2-PSK, phy: bgn, rssi: -61
+I (5240) wifi:pm start, type: 0
+
+Stopping SoftAP.
+I (5360) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+
+************************
+Wifi ip=192.168.88.23,mask=255.255.255.0,gw=192.168.88.1
+************************
+
+Value Changed
+Value Changed
+03:00:05.420 [W] ots: httpdns resolve start failed, -12 (ots_cloud_host_update,1022)
+03:00:05.430 [I] otu: Opened.
+Re-announcing _hap._tcp mDNS service
+03:00:05.490 [I] ots: ru.ots.io.mi.com resolved to 107.155.51.105.
+03:00:05.490 [I] ots: ots connect 107.155.51.105::443...
+03:00:05.510 [I] tls: connect to server Mijia Cloud, domain is 107.155.51.105, port is 443.
+03:00:05.690 [W] tls: timeout[100]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,389)
+03:00:05.850 [W] tls: timeout[200]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,389)
+03:00:05.960 [W] tls: timeout[300]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,389)
+03:00:06.040 [I] ots: Connected.
+03:00:06.040 [I] ots: -->sync sent.
+03:00:06.060 [I] ots: <--sync ack.
+18:45:57.040 [I] ots: -->login sent.
+18:45:57.100 [I] ots: <--login ack, code=0.
+18:45:57.100 [I] miio_ot: info(ots) will start in 0 ms...
+18:45:57.140 [I] miio_ot: -->info(ots).
+18:45:57.230 [I] miio_ot: <--info ack(ots).
+18:45:58.100 [I] miio_ot: -->pull ip list sent.
+18:46:00.040 [I] ots: -->sync sent.
+18:46:00.060 [I] ots: <--sync ack.
+18:46:08.040 [I] ots: -->sync sent.
+18:46:08.050 [I] ots: <--sync ack.
+18:46:14.310 [I] ots: -->kplv sent.
+18:46:14.340 [I] ots: <--kplv ack.
+18:46:24.040 [I] ots: -->sync sent.
+18:46:24.090 [I] ots: <--sync ack.
+18:46:30.340 [I] ots: -->kplv sent.
+18:46:30.370 [I] ots: <--kplv ack.
+18:46:46.370 [I] ots: -->kplv sent.
+18:46:46.390 [I] ots: <--kplv ack.
+18:46:56.040 [I] ots: -->sync sent.
+18:46:56.060 [I] ots: <--sync ack.
+18:47:02.390 [I] ots: -->kplv sent.
+18:47:02.750 [I] ots: <--kplv ack.
+18:47:18.750 [I] ots: -->kplv sent.
+18:47:18.760 [I] ots: <--kplv ack.
+```
 Настройки подключения  
 ![2022-03-23_184921](https://user-images.githubusercontent.com/7299412/159749940-7e65e552-5700-482f-a036-7aded1ebdb23.png)
 
@@ -49,43 +150,12 @@ Hard resetting via RTS pin...
 
 # recovery firmware
 $ esptool.py -b 115200 --port COM3 --before default_reset write_flash 0x00000 flash_dump_4M.bin
-
-# Читаем mac адрес
-$ esptool.py -b 115200 --port COM3 read_mac
-Serial port COM3
-Connecting...
-Detecting chip type... Unsupported detection protocol, switching and trying again...
-Connecting...
-Detecting chip type... ESP32
-Chip is unknown ESP32 (revision 1)
-Features: WiFi, BT, Single Core, 240MHz, VRef calibration in efuse, Coding Scheme 3/4
-Crystal is 40MHz
-MAC: 54:48:e6:de:4a:9a
-Stub is already running. No upload is necessary.
-MAC: 54:48:e6:de:4a:9a
-Hard resetting via RTS pin...
-
-# Читаем chip id
-$ esptool.py -b 115200 --port COM3 chip_id
-Serial port COM3
-Connecting...
-Detecting chip type... Unsupported detection protocol, switching and trying again...
-Connecting...
-Detecting chip type... ESP32
-Chip is unknown ESP32 (revision 1)
-Features: WiFi, BT, Single Core, 240MHz, VRef calibration in efuse, Coding Scheme 3/4
-Crystal is 40MHz
-MAC: 54:48:e6:de:4a:9a
-Stub is already running. No upload is necessary.
-Warning: ESP32 has no Chip ID. Reading MAC instead.
-MAC: 54:48:e6:de:4a:9a
-Hard resetting via RTS pin...
 ```
 
 ## Прошивка Tasmota
-Скачиваем прошивку http://ota.tasmota.com/tasmota32/release/tasmota32solo1.bin  
-Скачиваем программу для прошивки https://github.com/Jason2866/ESP_Flasher/releases  
-Прошиваем  
+Flash only with [tasmota32solo1.bin](http://ota.tasmota.com/tasmota32/release/tasmota32solo1.bin  ) build for ESP32-SOLO-1. [Flashing instructions](https://tasmota.github.io/docs/ESP32/#flashing) for tasmota32 firmware.  
+I used [ESP flasher](https://github.com/Jason2866/ESP_Flasher/releases)  
+Log    
 ```log
 Using 'COM3' as serial port.
 Connecting......
@@ -128,64 +198,6 @@ Writing at 0x0000e000... (100 %)
 Wrote 8192 bytes (47 compressed) at 0x0000e000 in 0.1 seconds (effective 559.9 kbit/s)...
 Hash of data verified.
 Compressed 1365120 bytes to 961084...
-Writing at 0x00010000... (1 %)
-Writing at 0x0001695a... (3 %)
-Writing at 0x0001f4b5... (5 %)
-Writing at 0x0002559e... (6 %)
-Writing at 0x0002ddc9... (8 %)
-Writing at 0x00035b4d... (10 %)
-Writing at 0x00040296... (11 %)
-Writing at 0x0004a30f... (13 %)
-Writing at 0x00052428... (15 %)
-Writing at 0x00057490... (16 %)
-Writing at 0x0005c4f7... (18 %)
-Writing at 0x0006172b... (20 %)
-Writing at 0x0006693a... (22 %)
-Writing at 0x0006bef5... (23 %)
-Writing at 0x000715da... (25 %)
-Writing at 0x00076fe4... (27 %)
-Writing at 0x0007c294... (28 %)
-Writing at 0x00081917... (30 %)
-Writing at 0x00086bba... (32 %)
-Writing at 0x0008bb42... (33 %)
-Writing at 0x000910bd... (35 %)
-Writing at 0x00096234... (37 %)
-Writing at 0x0009b775... (38 %)
-Writing at 0x000a07e9... (40 %)
-Writing at 0x000a55ff... (42 %)
-Writing at 0x000aa37e... (44 %)
-Writing at 0x000af4ec... (45 %)
-Writing at 0x000b43f4... (47 %)
-Writing at 0x000b9146... (49 %)
-Writing at 0x000bdf42... (50 %)
-Writing at 0x000c2bd9... (52 %)
-Writing at 0x000c7d28... (54 %)
-Writing at 0x000ccd2e... (55 %)
-Writing at 0x000d2929... (57 %)
-Writing at 0x000d8316... (59 %)
-Writing at 0x000ddd20... (61 %)
-Writing at 0x000e2fdb... (62 %)
-Writing at 0x000e8436... (64 %)
-Writing at 0x000ed76b... (66 %)
-Writing at 0x000f2ac5... (67 %)
-Writing at 0x000f7e09... (69 %)
-Writing at 0x000fce53... (71 %)
-Writing at 0x00101f79... (72 %)
-Writing at 0x001074ca... (74 %)
-Writing at 0x0010d371... (76 %)
-Writing at 0x001128f2... (77 %)
-Writing at 0x00117b03... (79 %)
-Writing at 0x0011cf10... (81 %)
-Writing at 0x001223d1... (83 %)
-Writing at 0x00127b11... (84 %)
-Writing at 0x0012d2ca... (86 %)
-Writing at 0x001330bd... (88 %)
-Writing at 0x00138983... (89 %)
-Writing at 0x0013de61... (91 %)
-Writing at 0x0014375b... (93 %)
-Writing at 0x00148b08... (94 %)
-Writing at 0x0014e736... (96 %)
-Writing at 0x00153c87... (98 %)
 Writing at 0x00159528... (100 %)
 Wrote 1365120 bytes (961084 compressed) at 0x00010000 in 23.5 seconds (effective 464.3 kbit/s)...
 Hash of data verified.
@@ -198,18 +210,6 @@ Done! Flashing is complete!
 
 ## Tasmota
 ```log
-[22:16:05]ets Jun  8 2016 00:22:57
-[22:16:05]
-[22:16:05]rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
-[22:16:05]configsip: 0, SPIWP:0xee
-[22:16:05]clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
-[22:16:05]mode:DOUT, clock div:2
-[22:16:05]load:0x3fff0018,len:4
-[22:16:05]load:0x3fff001c,len:1044
-[22:16:05]load:0x40078000,len:10124
-[22:16:05]load:0x40080400,len:5828
-[22:16:05]entry 0x400806a8
-[22:16:05]
 [22:16:05]00:00:00.003-223/45 HDW: ESP32-S0WD-OEM 
 [22:16:05]./components/esp_littlefs/src/littlefs/lfs.c:1071:error: Corrupted dir pair at {0x0, 0x1}
 [22:16:07]00:00:00.442-226/46 UFS: FlashFS mounted with 312 kB free
