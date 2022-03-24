@@ -3,7 +3,7 @@ Reverse engineering and firmware Tasmota
 
 ## Hardware
 Board ESP-WROOM-32D (chip ESP32-D0WD)  
-Подробнее https://docs.espressif.com/projects/esp-idf/en/v4.3/esp32/hw-reference/modules-and-boards.html  
+More details https://docs.espressif.com/projects/esp-idf/en/v4.3/esp32/hw-reference/modules-and-boards.html  
 ![UW7g0Cw](https://user-images.githubusercontent.com/7299412/159749461-8de5ecc4-f47c-4fe9-b2a0-d89b2eecec2c.jpeg)
 ![IMG_20220323_172951](https://user-images.githubusercontent.com/7299412/159749481-2a7beabb-daa3-4161-8e19-b79daed45d7b.jpg)
 ![IMG_20220323_173131](https://user-images.githubusercontent.com/7299412/159749515-72e5212f-d7d3-42cf-9000-adb90c4e3f26.jpg)
@@ -113,11 +113,11 @@ Re-announcing _hap._tcp mDNS service
 18:47:18.750 [I] ots: -->kplv sent.
 18:47:18.760 [I] ots: <--kplv ack.
 ```
-Настройки подключения  
+Connection settings  
 ![2022-03-23_184921](https://user-images.githubusercontent.com/7299412/159749940-7e65e552-5700-482f-a036-7aded1ebdb23.png)
 
 
-## Схема подключения для режима Download
+## Wiring diagram for firmware download
 | ESP Pin    | Serial Pin |
 | ---------- | ---------- |
 | GND        | GND        |
@@ -127,7 +127,7 @@ Re-announcing _hap._tcp mDNS service
 | EN         | RTS        |
 | GPIO0      | GND        |
 
-## Режим Download
+## Firmware
 
 ```sh
 # dump firmware 
