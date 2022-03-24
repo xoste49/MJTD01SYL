@@ -1,4 +1,4 @@
-# Mi LED Desk Lamp 1S (MJTD01SYL)
+# Xiaomi Mi LED Desk Lamp 1S (MJTD01SYL)
 Reverse engineering and firmware Tasmota
 
 ## Hardware
