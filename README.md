@@ -223,10 +223,9 @@ Done! Flashing is complete!
 Подключаемся к wifi точке котрую создала лампа tasmota-DE4A9A-2714 и открываем 192.168.4.1  
 Настраем подключение к домашней сети wifi.  
 Заходим на новый адрес который сообщит tasmota.  
-Переходим `Configuration -> Configure Other -> Template` добавляем конфиг:  
+Импортируем template (https://tasmota.github.io/docs/Templates/#importing-templates) 
 ```
 {"NAME":"Mi LED Desk Lamp 1S","GPIO":[6212,0,416,0,417,0,0,0,3840,0,0,0,160,640,608,0,0,0,0,0,0,0,3264,3296,0,0,0,0,0,32,0,0,0,0,0,0],"FLAG":3,"BASE":66}
-{"NAME":"Mi LED Desk Lamp 1S","GPIO":[6212,0,416,0,417,0,0,0,3840,0,0,0,160,640,608,0,0,0,0,0,0,0,3264,3296,0,0,0,0,0,32,0,0,0,0,0,0],"FLAG":0,"BASE":1,"CMND":"DimmerRange 30,100"}
 ```
 Консольные команды можно посмотреть здесь https://tasmota.github.io/docs/Commands/#light
 ## Profit!  
