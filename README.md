@@ -122,7 +122,7 @@ Connection settings
 | ESP Pin    | Serial Pin |
 | ---------- | ---------- |
 | GND        | GND        |
-| 3.3V       | GND        |
+| 3.3V       | 3.3V       |
 | TXD        | RXD        |
 | RXD        | TXD        |
 | EN         | RTS        |
